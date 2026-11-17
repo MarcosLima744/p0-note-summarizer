@@ -4,10 +4,27 @@ Aplicação Python local que transforma os arquivos `.txt` de uma semana em resu
 por assunto e lista de pendências, para ajudar a decidir o próximo estudo.
 Utiliza um único modelo Qwen pelo Ollama.
 
+## Compatibilidade
+
+A aplicação foi escrita para funcionar em macOS, Linux e Windows, com Python
+3.11+, uv e Ollama instalados. O código usa caminhos portáveis e se comunica com
+o modelo pela API HTTP local; não depende de recursos exclusivos do macOS.
+
+O ambiente utilizado no desenvolvimento e a execução real confirmada pelo autor
+foram em macOS. Linux e Windows ainda precisam de validação prática. O desempenho
+do modelo depende da memória, do processador e da aceleração disponível.
+
 ## Preparar o modelo
 
-1. Instale o [Ollama para macOS](https://ollama.com/download/mac) e abra o aplicativo.
-2. No terminal, baixe o modelo escolhido:
+Instale o Ollama conforme seu sistema:
+
+| Sistema | Instalação e inicialização |
+| --- | --- |
+| macOS | Instale o [aplicativo para macOS](https://ollama.com/download/mac) e abra-o. |
+| Windows | Instale o [aplicativo para Windows](https://ollama.com/download/windows); ele executa o servidor em segundo plano. Veja os [requisitos do sistema](https://docs.ollama.com/windows). |
+| Linux | Siga o [guia oficial de instalação](https://docs.ollama.com/linux) e inicie o serviço ou execute `ollama serve`. |
+
+Com o servidor em execução, baixe o modelo em um terminal (PowerShell no Windows):
 
 ```sh
 ollama pull qwen3:4b-instruct
@@ -22,7 +39,9 @@ já houver uma instância em execução.
 
 ## Instalação e execução
 
-Requer Python 3.11+ e [uv](https://docs.astral.sh/uv/).
+Requer Python 3.11+ e [uv](https://docs.astral.sh/uv/getting-started/installation/).
+Dentro da pasta do projeto, os comandos abaixo são os mesmos no terminal do
+macOS/Linux e no PowerShell do Windows:
 
 ```sh
 uv sync --locked
