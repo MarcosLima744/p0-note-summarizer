@@ -1,0 +1,2 @@
+Estudei listas e tuplas em Python. Listas são mutáveis; tuplas são imutáveis.
+Concluí todos os exercícios planejados e a revisão de hoje.

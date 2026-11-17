@@ -1,0 +1,4 @@
+Estudei funções em Python: parâmetros, retorno e escopo local.
+Não entendi closures.
+Preciso resolver os exercícios de funções.
+Revisar compreensão de listas.

@@ -1,0 +1,13 @@
+[project]
+name = "note-summarizer"
+version = "0.1.0"
+description = "Síntese semanal de anotações de estudos pelo terminal"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.28,<1", "pydantic>=2.0,<3", "python-dotenv>=1.0,<2"]
+
+[project.scripts]
+note-summarizer = "note_summarizer.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

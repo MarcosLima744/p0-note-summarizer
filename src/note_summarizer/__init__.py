@@ -1,0 +1,1 @@
+"""Síntese semanal de estudos."""

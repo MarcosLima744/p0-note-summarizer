@@ -1,0 +1,4 @@
+Continuei o estudo de funções e escopo em Python.
+Ainda não entendi closures.
+Hoje concluí a revisão de compreensão de listas que anotei ontem.
+Li sobre variáveis de ambiente para proteger chaves de API.
